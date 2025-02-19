@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        @supports
+            -ko-blockdefs {
+
+                text {
+                widget: text
+            }
+
+            listsize {
+                widget: select;
+                options: 1 | 2 | 3;
+            }
+
+            color {
+                widget: color;
+            }
+            
+            width { label: Width; widget: integer; min: 500; max: 900; }
+    	face { label: Font; widget: text; category: style; }
+    	serifFace { label: Font Serif; extend: face; category: style; }
+    	sansFace { label: Font Sans; extend: face; category: style; }
+    	gutterWidth { label: Gutter; widget: integer; max: 40; min: 10; }
+    	template { label: Template; properties: bodyWidth=660 gutterWidth=20 }
+    	insertWidth { label: Inset Width; widget: integer; max: 600; min: 100; }
+    	heroBlock { properties: insertWidth=340; }
+
+      url { label: Link; widget: url }
+      src { label: Image; widget: src }
+      alt {
+        label: Alternative Text;
+        widget: text;
+        help: Alternative text will be shown on email clients that does not download image automatically;
+      }
+
+      text { label: Paragraph; widget: text }
+      title { label: Title; widget: text }
+      subTitle { label: Subtitle; }
+
+      link {
+      	label: Link;
+      	properties: url text;
+      }
+
+      image { label: Image; properties: src url alt }
+
+      bodyTheme { label: Body; }
+      headerBlock { label: Header; }
+      heroBlock { label: Hero; }
+      threetwoBlock { label: 3x2 Articles; }
+      twoColumnBlock { label: 2 Columns; }
+      socialBlock { label: Social; }
+      footerBlock { label: Footer; }
+        }
+        preheaderVisible { label: Show Preheader; extend: visible; help: Preheader block is the first one on the top of the page. It contains web version link and optionally unsubscribe link or a preheader text that will be shown as a preview on some email clients }
+        
+        
+
+       
+        
+      @media only screen and (min-width: 992px) {
+        .left-div {
+        padding-left: 150px;
+        padding-right: 140px;
+    }
+
+    .right-div {
+        padding-left: 140px;
+        padding-right: 150px;
+    }
+    .order-item {
+        padding-left:150px;
+      }
+     .vb-outer-line {
+      width: 70%;
+     }
+  }
+       
+    </style>
+</head>
+<body>
+    
+  
+  <center data-ko-container="main">
+  <div data-ko-container="main" data-ko-wrap="false">
+
+        <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="background-color:#202020;" data-ko-block="headerBlock">
+            <tr>
+              <td border="0" align="center" height="100%" valign="top" width="100%" style="background-color:none; background:linear-gradient(to bottom, #ffffff, #FFFFFF);">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:80px;">
+                                <tr>
+                                  <td align="center" valign="top" style="padding:20px 10px 10px; -ko-padding:@[_root_.gutterWidth]px @[Math.floor(_root_.gutterWidth / 2)]px @[Math.floor(_root_.gutterWidth / 2)]px">
+                                    <a data-ko-link="image.url" href="" target="_blank"><img  src="https://www.yarooms.com/hubfs/1-Aug-05-2024-01-12-36-4333-PM.png" alt="Correct Image" height="100" width="300" style="border-radius:10%;padding-right: 10px; padding-top: 10px;padding-left:10px;padding-bottom:10px;-ko-attr-alt: @[image.alt]; border:0; font:bold 24px/100% Frutiger, 'Frutiger Linotype', 'Helvetica Neue', Helvetica, Arial, sans-serif;"></a>
+                                </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+    
+                </table>
+                <div data-ko-block="HeaderAndText">
+                  <h1 data-ko-editable="headerText" align="center" style="font-family: Arial, Helvetica, sans-serif; font-weight: 520;line-height: 1.3cm;font-size: 30px;letter-spacing: 0cm;color: #000000;">  Your Order Has Been<br>
+                    Successfully Placed 
+                     </h1>   
+                 </div>
+                <div data-ko-block="HeaderAndText2">
+                  <div data-ko-editable="bodyText" align="center" style="font-size: 18px; color:#000000;font-family: Arial, Helvetica, sans-serif;padding-top:10px;">
+                       Order ID: 12345623
+                  </div>
+              </div>
+                
+                <!-- Button block-->
+                 
+                 
+                <table data-ko-block="buttonBlock" role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_buttonBlock_1" style="background-color: white">
+                  <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+                  <div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+                    
+                    <tbody><tr>
+                  <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 13px; padding-bottom: 13px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px">
+                    <table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+                      
+                      <tbody><tr>
+                  <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="12" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 12px 14px 12px 14px"><tbody><tr>
+                    <td width="auto" valign="middle" align="center" bgcolor="#630606" style="text-align: center; font-weight: normal; padding: 12px; padding-left: 14px; padding-right: 14px; background-color: #630606; color: white; font-size: 22px; font-family: Arial, Helvetica, sans-serif; border-radius: 40px">
+                      <a  data-ko-link="buttonLink.url" style="text-decoration: none; font-weight: normal; color: white;background-color: #630606; font-size: 22px; font-family: Arial, Helvetica, sans-serif" target="_new" href="https://www.example.com/track-order" data-ko-wrap="false" data-ko-editable="link.text">Track Your Order</a></td>
+                  </tr></tbody></table></td>
+                </tr>
+                  </tbody></table></div></td>
+                </tr>
+                </tbody></table></div>
+              </td></tr>
+                </tbody></table>
+               
+                 <!-- /Button block-->
+                 <div data-ko-block="HeaderAndText3">
+                  <div data-ko-editable="bodyText" align="center" style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;padding: 0;margin: 0;color:#000000">
+                        Please allow 24 hours to track your order.
+                 </div>
+              </div> 
+               <!--doubleArticleBlock-->
+   <table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_doubleArticleBlock_1" style="background-color: #ffffff" data-ko-block="doubleArticleBlock1">
+    <tbody>
+      <tr>
+        <td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+          <div style="margin: 0 auto; max-width: 700px;">
+            <table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="700" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 700px; box-sizing: border-box; ">
+              <tbody>
+                <tr>
+                  <td align="center" valign="top" style="font-size: 0; padding: 0 9px;padding-top: 30px;">
+                    <div style="width: 100%; max-width: 650px;display: flex; background-color: #7c060c;border-radius: 20px;">
+                      <div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 100px; padding-top: 13px; padding-bottom: 0px; min-width: calc(45%); max-width: calc(100%);">
+                        <table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%;" width="200px" align="left">
+                          <tbody>
+                            <tr>
+                              <td  data-ko-editable="leftTitleText" width="100%" valign="top" align="left" style="font-weight: normal; color: #f09916; font-size: 13px;white-space: nowrap;; font-family: Arial, Helvetica, sans-serif; padding: 13px; padding-top: 0px; padding-bottom: 0px; text-align: left">
+                                <span style="font-weight: normal;font-size: 16px; font-family: Arial, Helvetica, sans-serif;">Summary</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td data-ko-editable="leftLongText" class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #ffffff; font-size: 14px; font-family: Arial, Helvetica, sans-serif; padding: 13px; padding-top: 5px; padding-bottom: 0px; text-align: left;white-space: nowrap; line-height: normal">
+                                <p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Ready to Ship</p>
+                                <p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;font-size: 10px;padding-top: 7px;padding-bottom: 5px;"># 7348.June 30, 2024</p>
+                                <p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;font-size: 12px;padding-top: 7px;">Rs.415.08</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 600px; padding-top: 13px; padding-bottom: 13px; min-width: calc(55%); max-width: calc(100%);">
+                        <table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%;" width="700px" align="left">
+                          <tbody>
+                            <tr>
+                              <td  data-ko-editable="rightTitleText" width="100%" valign="top" align="left" style="font-weight: normal; color: #f09916; font-size: 13px; font-family: Arial, Helvetica, sans-serif;white-space: nowrap;; padding: 13px; padding-top: 0px; padding-bottom: 0px; text-align: left">
+                                <span style="font-weight: normal;font-size: 16px; font-family: Arial, Helvetica, sans-serif;">Shipping Address</span>
+                              </td>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td data-ko-editable="rightLongText" class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #ffffff; font-size: 14px; font-family: Arial, Helvetica, sans-serif; padding: 13px; padding-top: 5px; padding-bottom: 0px; text-align: left;white-space: nowrap; line-height: normal">
+                                <p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Stenano William</p>                              
+                                <p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;font-size: 10px;padding-top: 7px;padding-bottom: 5px;">Sweet Snack HQ, 123 Bique Street Unit 10</p>
+                                <p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;font-size: 12px;padding-top: 7px;">Boston, MA 02110</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+ <!--/doubleArticleBlock-->  
+ <div data-ko-block="HeaderAndText1">
+  <div data-ko-editable="bodyText" align="center" style="font-size: 30px; font-family: Arial, Helvetica, sans-serif;padding-top: 20px;color:#000000; background-color: #ffffff;">
+      Your item in this order
+</div>
+</div>
+<!-- Image and text side by side-->
+<div  style="background-color: #ffffff" data-ko-block="fixedlist3">
+  <ul style="list-style-type: none; padding-left: 0;">
+  <li>
+    <div class="order-item" style="display: flex; padding-bottom: 20px;">
+           <!--This is Image Section -->
+      <div>
+        <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="background-color: #ffffff;">
+          <tr>
+            <td align="left" valign="top" style="background-color: transparent; background: linear-gradient(to bottom, #ffffff, #FFFFFF);">
+              <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 80px;">
+                <tr>
+                  <td align="left" valign="top" style="padding-right: 10px; padding-top: 10px;">
+                    <a data-ko-link="image.url" href="http://www.nps.gov/" target="_blank">
+                      <img  src="https://theceliacstore.com/wp-content/uploads/2023/09/61dssN9-CQL.jpg" alt="Correct Image" 
+                           height="85" 
+                           width="80" 
+                           style="height: 85px; width: 80px; padding-right: 10px; padding-top: 10px;padding-left:10px;padding-bottom:10px;background-color: #7c060c;border-radius: 10px;">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+         <!-- This is Text Section -->
+      <div class="order-text" data-ko-editable="firstBodyText" style="padding-top: 15px; text-align: left;color: #000000;">
+        <p >
+          Pulsitos <br>
+          Order Number: #7348 <br>
+          Rs. 150.03 <br>
+          Estimated Delivery Date:10-01-2025
+        </p>
+      </div>
+    </div>
+  </li>
+  </ul>
+ </div>
+  <!-- /Image and text side by side-->              
+                <!-- Price Section -->
+                <div data-ko-block="fixedlist1" style="background-color: #FFFFFF; -ko-background-color: @color; display: flex; justify-content: space-between; width: 100%; box-sizing: border-box; padding: 20px;">
+                  
+                <div class="left-div" style="margin-bottom: 5px; text-align: left; width: 50%; box-sizing: border-box; white-space: nowrap;" data-ko-editable="firstBodyText">
+                    <p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">Subtotal</p>
+                  </div>
+                  <div class="right-div" style="margin-bottom: 5px; text-align: right; width: 50%; box-sizing: border-box; white-space: nowrap;" data-ko-editable="secondBodyText">
+                    <p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">RS.500.10</p>
+                  </div>
+                </div>
+                <!--/price section-->
+                <div data-ko-block="HeaderAndText4">
+                  <div data-ko-editable="bodyText" align="center" style="font-size: 30px; font-family: Arial, Helvetica, sans-serif;padding-top: 20px;color:#000000; background-color: #ffffff;">
+                    Any problems with your order?
+                </div>
+                </div>
+                <!-- hr block-->
+                <table role="presentation" class=".vb-outer-line" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf"  style="background-color: #ffffff" data-ko-block="hrBlock2">
+                  <tbody>
+                   <tr>
+                     <td class="vb-outer-line" align="center" valign="top" style="padding: 0">
+                      <div style="margin: 0 auto; max-width: 100%; width: 100%">
+                         <table role="presentation" class="vb-outer-line"  border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="border-collapse: collapse; background-color: #ffffff;">
+                           <tbody>
+                             <tr>
+                               <td align="center" valign="top" style="padding: 0; font-size: 0;">
+                                 <div style="vertical-align: top; width: 100%;">
+                                   <table role="presentation" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; width: 100%;" width="100%">
+                                     <tbody>
+                                       <tr>
+                                         <td valign="top" align="center" style="padding: 0;">
+                                           <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0; width: 95%;">
+                                             <tbody>
+                                               <tr>
+                                                 <td class="vb-outer-line" width="100%" height="1" style="padding: 0; font-size: 1px; line-height: 1px; max-height: 1px; background-color: #3f3f3f; line-height: 1px; max-height: 1px; overflow: hidden;">&nbsp;</td>
+                                               </tr>
+                                             </tbody>
+                                           </table>
+                                         </td>
+                                       </tr>
+                                     </tbody>
+                                   </table>
+                                 </div>
+                               </td>
+                             </tr>
+                           </tbody>
+                         </table>
+                       </div>
+                    </td>
+                   </tr>
+                  </tbody>
+                  </table>
+                  <!-- /hr block-->
+           <!-- two buttons block-->
+                     <table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf"  style="background-color: #ffffff" data-ko-block="doubleArticleBlock">
+                      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+                       <div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+                          <tbody><tr>
+                        <td align="right" valign="top" style="font-size: 0; padding: 0 9px">
+                          <div style="width: 100%; max-width: 552px;display: flex; justify-content: space-between;gap: 10px; -mru-width: 0px">
+                            <div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 276px; -mru-width: 0px; padding-top: 13px; padding-bottom: 13px; min-width: calc(50%); max-width: calc(100%); width: calc(304704px - 55200%)">
+                              <table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%; -yandex-p: calc(2px - 3%)" width="276" align="right">
+                            <tbody> <tr>
+                     <td valign="top" align="right" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="right" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+                          <td width="auto" valign="middle" align="right" bgcolor="#A52A2A" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #A52A2A; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; border-radius: 10px">
+                            <a style="text-decoration: none;display:inline-flex; align-items: center; justify-content: center; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif" target="_new" href="mailto:hi@sweetshop.sweet" >
+                              
+                              <img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt="" style="width: 25px; height: 25px; margin-right: 8px;padding-top: 8px;">
+                              <span data-ko-wrap="false" data-ko-editable="link.text">Email Us<br>hi@sweetshop.sweet</span></a></td>
+                        </tr></tbody></table></td></tr></tbody></table>
+                        <div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 276px; -mru-width: 0px; padding-top: 13px; padding-bottom: 13px; min-width: calc(50%); max-width: calc(100%); width: calc(304704px - 55200%)">
+                          <table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%; -yandex-p: calc(2px - 3%)" width="276" align="left">
+                               <tbody><tr>     
+                                
+                        <td valign="top" align="left" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="left" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+                          <td width="auto" valign="middle" align="left" bgcolor="#A52A2A" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #A52A2A; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; border-radius: 10px">
+                            <a style="text-decoration: none; font-weight: normal;white-space: nowrap; color: #ffffff; font-size: 13px;display: inline-flex;align-items: center; justify-content: center; font-family: Arial, Helvetica, sans-serif" target="_new" href="tel:+911234567890"  >
+                          <img src="https://e7.pngegg.com/pngimages/344/761/png-clipart-computer-icons-call-icon-cdr-text-thumbnail.png" alt="" style="width: 25px; height: 25px; margin-right: 8px;padding-top: 8px;">
+                           <span data-ko-wrap="false" data-ko-editable="leftButtonLink.text">Contact us<br>+91 1234567890</span></a></td>
+                        </tr></tbody></table></td>
+                      </tr></tbody></table></div></div></td>
+                      </tr></tbody></table></div>
+                      </td></tr>                  </tbody></table>
+                  
+   <!-- /two buttons block--> 
+                      
+                  <!-- Side image block with reduced gap -->
+ <table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf"  style="background-color: #7c060c;align-items: left;" data-ko-block="sideImageBlock1">
+  
+    <tbody>
+      <tr>
+        <td align="center" valign="top" style="display: flex; font-size: 0;"> 
+          <!-- Image on the left -->
+          <div>
+            <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="background-color: #7c060c;">
+              <tr>
+                <td align="left" valign="top" style="background-color: transparent; background: linear-gradient(to bottom, #7c060c, #7c060c);">
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 80px;">
+                    <tr>
+                      <td align="left" valign="top" style="padding-top: 10px;">
+                        <a data-ko-link="image.url" href="" target="_blank">
+                          <img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt="" height="50" width="50" style="border-radius:50%;padding-right: 10px; padding-top: 10px;padding-left:10px;padding-bottom:10px;-ko-attr-alt: @[image.alt]; border:0; font:bold 24px/100% Frutiger, 'Frutiger Linotype', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+          
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 0; ">
+            <tbody>
+              <tr>
+                <td data-ko-editable="firstBodyText" align="left" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #ffffff; padding-bottom: 10px;padding-top:10px;width:100%;line-height: 20px;white-space: nowrap; ">
+                  <p style="margin: 0;white-space: nowrap;">Want to talk business with us?</p>
+                  <p style="margin: 0;font-size: 9px;white-space: nowrap;">Feel free to reach out to us <strong>at partner@sweetshop.sweet</strong><br>We open opportunities for all forms of business collaboration.</p>
+                </td>
+             </tr>
+           </tbody>
+         </table>
+        </td>
+      </tr>
+    </tbody>
+     </table> 
+ <!-- End updated side image block -->
+   <!-- footer block -->
+   <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="background-color:#202020;" data-ko-block="headerBlock1">
+    <tr>
+      <td border="0" align="center" height="100%" valign="top" width="100%" style="background-color:none; background:linear-gradient(to bottom, #ffffff, #FFFFFF);">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:80px;">
+                        <tr>
+                          <td align="center" valign="top" style="padding:20px 10px 10px; -ko-padding:@[_root_.gutterWidth]px @[Math.floor(_root_.gutterWidth / 2)]px @[Math.floor(_root_.gutterWidth / 2)]px">
+                            <a data-ko-link="image.url" href="" target="_blank">
+                              <img  src="https://www.yarooms.com/hubfs/1-Aug-05-2024-01-12-36-4333-PM.png" alt="Correct Image" height="100" width="250" style="border-radius:10%;padding-right: 10px; padding-top: 10px;padding-left:10px;padding-bottom:10px;-ko-attr-alt: @[image.alt]; border:0; font:bold 24px/100% Frutiger, 'Frutiger Linotype', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+                            </a>
+                        </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr></table>
+        
+  <!-- socialblock -->
+
+  <table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_bigSocialBlock_1" style="background-color: #ffffff" data-ko-block="bigSocialBlock">
+    <tbody>
+     <tr>
+       <td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+         
+         <div style="margin: 0 auto; max-width: 570px; -mru-width: 0px">
+           <table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+             <tbody>
+               <tr>
+                 <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 13px; padding-bottom: 13px">
+                   <div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px">
+                     <table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+                       <tbody>
+                         <tr>
+                           <td width="100%" valign="top" align="center" class="links-color socialLinks mobile-textcenter" style="font-size: 6px; font-weight: normal; text-align: center; padding: 9px; padding-top: 5px; padding-bottom: 5px;">
+                             &nbsp;<a style="display: inline-block; border-radius: 50px;" target="_blank" href="https://www.facebook.com/yourpage"><img border="0" src="https://cdn-icons-png.flaticon.com/256/2504/2504839.png" width="48" height="48" alt="Facebook" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px;"></a>
+                             &nbsp;<a style="display: inline-block; border-radius: 50px;" target="_blank" href="https://www.twitter.com/yourprofile"><img border="0" src="https://i.pinimg.com/474x/1e/d6/e0/1ed6e0a9e69176a5fdb7e090a1046b86.jpg" width="48" height="48" alt="X / Twitter" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px;"></a>
+                             &nbsp;<a style="display: inline-block; border-radius: 50px;" target="_blank" href="https://www.linkedin.com/in/yourprofile"><img border="0" src="https://thumbs.dreamstime.com/b/linkedin-icon-logo-beautiful-meticulously-designed-223937618.jpg" width="48" height="48" alt="LinkedIn" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px;"></a>
+                             &nbsp;<a style="display: inline-block; border-radius: 50px;" target="_blank" href="https://www.instagram.com/yourprofile"><img border="0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxjIL03VE0L9Fs4oCWJg-E9A9vXm05R307qdW8gjAMdu09Uxr8FD2AYT6BWmpp30aee_8&usqp=CAU" width="48" height="48" alt="Instagram" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px;"></a>
+                             &nbsp;<a style="display: inline-block; border-radius: 50px;" target="_blank" href="https://www.youtube.com/yourchannel"><img border="0" src="https://img.icons8.com/ios7/200/228BE6/facebook-messenger.png" width="48" height="48" alt="YouTube" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px;"></a>
+                           </td>
+                         </tr>
+                       </tbody>
+                     </table>
+                   </div>
+                 </td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+        
+       </td>
+      </tr>
+      </tbody>
+     </table>
+ 
+     <!-- socialblock -->
+ <!-- unsubcribe block--> 
+ <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="background-color:#ffffff;" data-ko-block="footerBlock">
+  <tr>
+      <td align="center" height="100%" valign="top" width="100%" style="background-color:#ffffff; padding-top: 0;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" style="margin-top: 0;">
+              <tr>
+                  <td align="center" valign="top" style="padding: 20px 20px 30px;">
+                      <div data-ko-editable="footerText" data-ko-wrap="false">
+                          <p style="color:#000000; font:12px/16px Frutiger, 'Frutiger Linotype', 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 2px 0; padding: 0; text-align: center;letter-spacing: 0.5px;">
+                              Sweet Snack HQ, 123 Bique Street Unit 10
+                          </p>
+                          <p style="color:#000000; font:14px/18px Frutiger, 'Frutiger Linotype', 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 20px 0; padding: 0; text-align: center;letter-spacing: 0.5px;">
+                              Boston, MA 02110
+                          </p>
+                      </div>
+                      <div data-ko-editable="unsubscribeText" data-ko-wrap="false">
+                          <p style="color:#AAAAAA; font:14px/18px Frutiger, 'Frutiger Linotype', 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 10px 0; padding: 0; text-align: center;">
+                              <a href="|UNSUB|" target="_blank" style="color:#b90d2a;">unsubscribe</a>
+                          </p>
+                      </div>
+                  </td>
+              </tr>
+          </table>
+      </td>
+  </tr>
+</table>
+ <!-- /unsubcribe block-->                   
+  
+  </div>
+</body>
+</html>
